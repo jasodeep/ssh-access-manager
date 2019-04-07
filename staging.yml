@@ -1,1 +1,5 @@
-o
+- hosts: "staging-{{ servers }}"
+  become: true
+  become_user: root
+  roles:
+    - ssh-access

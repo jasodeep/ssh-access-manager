@@ -1,0 +1,7 @@
+- name: Grant SSH access
+  import_tasks: grant-access.yml
+  when: access == "grant"
+
+- name: Revoke SSH access
+  import_tasks: revoke-access.yml
+  when: access == "revoke"

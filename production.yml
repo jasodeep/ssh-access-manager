@@ -1,0 +1,5 @@
+- hosts: "production-{{ servers }}"
+  become: true
+  become_user: root
+  roles:
+    - ssh-access
